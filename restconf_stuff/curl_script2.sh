@@ -5,6 +5,11 @@ curl -k -u admin:admin \
   -H "Accept: application/yang-data+json" \
   "https://clab-lab3-ceos1:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet2/state"
 
+echo "interface-config"
+curl -k -u admin:admin  \
+  -H "Accept: application/yang-data+json" \
+  "https://clab-lab3-ceos1:6020/restconf/data/openconfig-interfaces:interfaces/interface=Ethernet1/config"
+
 echo "sytem:system"
 curl -k -u admin:admin \
   -H "Accept: application/yang-data+json" \
