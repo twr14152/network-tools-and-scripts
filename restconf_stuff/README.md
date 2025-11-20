@@ -1,6 +1,7 @@
 ### Curl
 Working with restconf on ceos-lab device curl is useful for determing which url is working on the device. The response type to a command is much faster with curl than it is using python requests and its a more direct means of getting info.
 
+Really does seem from a restconf standpoint Arista went the other way of json/rpc with eapi. Which I can appreciate. Restconf seems to damn cumbersome.
 
 curl_script1.sh - This script will tell you what urls are exposed / registered on the device based on the reponse code (200/Good 400/Bad). 
 ```
